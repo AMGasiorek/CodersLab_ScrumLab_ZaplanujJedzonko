@@ -1,0 +1,31 @@
+@import "../settings/colors";
+
+.container--columns {
+  width: 100%;
+  height: 15vh;
+}
+
+.container--footer {
+  width: 100%;
+  height: 10vh;
+}
+
+.columns {
+  background-color: #5B605F;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column1 {
+  width: 32%
+}
+
+.column2 {
+  width: 32%
+}
+
+.column3 {
+  width: 32%
+}
+
+
