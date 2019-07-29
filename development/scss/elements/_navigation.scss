@@ -4,6 +4,9 @@
   width: 30%;
   height: 100%;
   ul{
-
+    li{
+      color: $buttonsColor;
+      border-left: $buttonsColor solid 5px;
+    }
   }
 }
