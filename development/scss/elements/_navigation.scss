@@ -1,11 +1,9 @@
 @import "../settings/colors";
 .navigation__panel{
   background-color: $navigationColor;
-  width: 200px;
+  width: 150px;
   height: 100%;
   ul{
-
-    padding: unset;
     list-style: none;
     width: 100%;
     li{
@@ -16,10 +14,12 @@
       justify-content: space-between;
       align-items: center;
       padding-left: 6px;
+      font-size: 20px;
 
       &:hover{
         font-weight: bold;
-        border-left: $buttonsColor solid 5px;
+        border-left: $buttonsColor solid 4px;
+        padding-left: 2px;
         &:after{
           color: $buttonsColor;
           content:">";
@@ -33,6 +33,6 @@
 .content{
   justify-content: flex-start;
   height: 80vh;
-  background-image: url("../../images/floral_background.png");
+  background-image: url("../images/floralBackground.png");
   background-repeat: repeat;
 }
