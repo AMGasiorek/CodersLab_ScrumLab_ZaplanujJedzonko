@@ -3,71 +3,70 @@
 .container--columns {
   width: 100%;
   height: 25vh;
-}
-
-.columns {
-  background-color: #5B605F;
-  display: flex;
-  justify-content:space-around;
-  color:white;
-  flex-direction: row;
-  h3 {
-    font-size:22px;
-  }
-  li {
-    font-size:18px;
-  }
-  p {
-    padding-bottom:10px;
-    font-size:18px;
-  }
-  .column1 {
-    width: 32%;
-    padding-left:70px;
-  }
-  .column2 {
-    width: 32%;
+  .columns {
+    background-color: #5B605F;
+    display: flex;
+    justify-content:space-around;
+    color:$fontWhite;
+    flex-direction: row;
     h3 {
-      padding-left: 20px;
+      font-size:22px;
     }
-  }
-  .column3 {
-    width: 32%;
-    padding-right:40px;
-    .fab {
-      background-color: white;
-      color:white;
-      width:35px;
-      height:35px;
+    li {
+      font-size:18px;
     }
-    input[type=text] {
-      width:120px;
+    p {
+      padding-bottom:10px;
+      font-size:18px;
     }
-    input[type=submit] {
-      background-color: #FF6600;
-      color:white;
-      border:1px solid #FF6600;
-      height:22px;
-      font-weight:900;
+    .column1 {
+      width: 32%;
+      padding-left:70px;
     }
-  }
+    .column2 {
+      width: 32%;
+      h3 {
+        padding-left: 20px;
+      }
+    }
+    .column3 {
+      width: 32%;
+      padding-right:40px;
+      .fab {
+        background-color: white;
+        color:$fontWhite;
+        width:35px;
+        height:35px;
+      }
+      input[type=text] {
+        width:120px;
+      }
+      input[type=submit] {
+        background-color: $buttonsColor;
+        color:$fontwhite;
+        border:1px solid $buttonsColor;
+        height:22px;
+        font-weight:900;
+      }
+    }
 
+  }
 }
 
 .container--footer {
   width: 100%;
   height: 8vh;
-  background-color:#4a4a49;
+  background-color:$headerColor;
   display:flex;
   justify-content:center;
   align-items:center;
   p {
     font-size:20px;
-    color:white;
+    color:$fontWhite;
   }
   span{
     font-size:20px;
-    color:#FF6600;
+    color:$buttonsColor;
   }
 }
 
