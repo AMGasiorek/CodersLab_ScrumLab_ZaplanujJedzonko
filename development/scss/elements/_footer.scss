@@ -1,0 +1,73 @@
+@import "../settings/colors";
+
+.container--columns {
+  width: 100%;
+  height: 200px;
+  .columns {
+    background-color: $navigationColor;
+    display: flex;
+    justify-content:space-around;
+    color:$fontWhite;
+    flex-direction: row;
+    h3 {
+      font-size:22px;
+    }
+    li {
+      font-size:18px;
+    }
+    p {
+      padding-bottom:10px;
+      font-size:18px;
+    }
+    .column1 {
+      width: 32%;
+      padding-left:70px;
+    }
+    .column2 {
+      width: 32%;
+      h3 {
+        padding-left: 20px;
+      }
+    }
+    .column3 {
+      width: 32%;
+      padding-right:40px;
+      .fab {
+        font-size:25px;
+        padding-top:20px;
+        padding-right:25px;
+      }
+      input[type=text] {
+        width:120px;
+      }
+      input[type=submit] {
+        background-color: $buttonsColor;
+        color:$fontWhite;
+        border:1px solid $buttonsColor;
+        height:22px;
+        font-weight:900;
+      }
+    }
+
+  }
+}
+
+.container--footer {
+  width: 100%;
+  height: 50px;
+  background-color:$headerColor;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  p {
+    font-size:20px;
+    color:$fontWhite;
+  }
+  span{
+    font-size:20px;
+    color:$buttonsColor;
+  }
+}
+
+
+
