@@ -2,7 +2,7 @@
 
 .container--columns {
   width: 100%;
-  height: 25vh;
+  height: 200px;
   .columns {
     background-color: $navigationColor;
     display: flex;
@@ -43,7 +43,7 @@
       }
       input[type=submit] {
         background-color: $buttonsColor;
-        color:$fontwhite;
+        color:$fontWhite;
         border:1px solid $buttonsColor;
         height:22px;
         font-weight:900;
@@ -55,7 +55,7 @@
 
 .container--footer {
   width: 100%;
-  height: 8vh;
+  height: 50px;
   background-color:$headerColor;
   display:flex;
   justify-content:center;
