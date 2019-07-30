@@ -8,18 +8,23 @@
 //Jeśli chcecie sobie zobaczyć swoje kolumienki i wiersze to możecie odkomentować sobie bordery ;)
 
 
-[class*="col-"]{
-  width: 100%;
-  display:block;
-  /*border: 1px solid black;*/
-}
-$cols:10;
 
-.container--grid {
+
+
+.container--grid.landingPage {
+  @extend .container;
+  background-color: $backgroundColor;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
+
   .row {
+    [class*="col-"]{
+      width: 100%;
+      display:block;
+      /*border: 1px solid black;*/
+    }
+    $cols:10;
+
     @for $i from 1 through $cols{
       .col-#{$i}{
         float: left;
