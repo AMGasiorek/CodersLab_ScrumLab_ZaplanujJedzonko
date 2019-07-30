@@ -1,0 +1,31 @@
+.section2{
+  height: 200px;
+  color: white;
+  padding-top: 50px;
+}
+
+
+section.medium_background{
+  div.container--grid.landingPage{
+    div.row{
+      div.col-3.section2{
+        div.buttonBox{
+          text-align: center;
+          padding-bottom: 50px;
+          button.button{
+            background-color: $buttonsColor;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-weight: bold;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
