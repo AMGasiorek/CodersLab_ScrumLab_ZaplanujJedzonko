@@ -38,3 +38,16 @@
    }
   }
 
+header{
+  div.name{
+      font-weight: bold;
+      color: white;
+      font-size: 25px;
+      margin-left: 30px;
+    i.user{
+      margin: 10px;
+      color: $buttonsColor;
+      font-size: 30px;
+    }
+  }
+}
