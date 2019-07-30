@@ -41,3 +41,15 @@
     }
   }
 }
+
+.light_background {
+  background-color: $backgroundColor;
+}
+
+.medium_background {
+  background-color: $navigationColor;
+}
+
+.darker_background {
+  background-color: $headerColor;
+}
