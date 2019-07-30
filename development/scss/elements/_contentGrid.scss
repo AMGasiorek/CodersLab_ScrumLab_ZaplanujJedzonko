@@ -1,0 +1,38 @@
+//Partial z gridem
+
+//Wszędzie tam gdzie będziecie chcieli użyć grida proszę zrobić nastęþujące sekwencję czynności:
+//  1. Do danej sekcji nad którą pracujecie ("section") dodać klasę ".container"
+//  2. Wewnątrz sekcji stworzyć div o klasie ".row"
+//  3. Wewnątrz diva o klasie .row tworzycie divy z kolumnami. Pamiętajcie aby suma kolumn wynosiła zawsze 10.
+
+//Jeśli chcecie sobie zobaczyć swoje kolumienki i wiersze to możecie odkomentować sobie bordery ;)
+
+
+[class*="col-"]{
+  width: 100%;
+  display:block;
+  /*border: 1px solid black;*/
+}
+$cols:10;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  .row {
+    @for $i from 1 through $cols{
+      .col-#{$i}{
+        float: left;
+        min-height: 1px;
+        width: (100%/$cols) *$i;
+        //border: 1px solid black;
+      }
+    }
+
+    &:after, &:before {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}
