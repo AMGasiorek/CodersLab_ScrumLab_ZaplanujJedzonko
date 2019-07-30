@@ -1,19 +1,7 @@
-//Partial z gridem
-
-//Wszędzie tam gdzie będziecie chcieli użyć grida proszę zrobić nastęþujące sekwencję czynności:
-//  1. Do danej sekcji nad którą pracujecie ("section") dodać klasę ".container"
-//  2. Wewnątrz sekcji stworzyć div o klasie ".row"
-//  3. Wewnątrz diva o klasie .row tworzycie divy z kolumnami. Pamiętajcie aby suma kolumn wynosiła zawsze 10.
-
-//Jeśli chcecie sobie zobaczyć swoje kolumienki i wiersze to możecie odkomentować sobie bordery ;)
-
-
-
 
 
 .container--grid.landingPage {
   @extend .container;
-  background-color: $backgroundColor;
   max-width: 1200px;
   margin: 0 auto;
 
@@ -40,4 +28,16 @@
       clear: both;
     }
   }
+}
+
+.light_background {
+  background-color: $backgroundColor;
+}
+
+.medium_background {
+  background-color: $navigationColor;
+}
+
+.darker_background {
+  background-color: $headerColor;
 }
