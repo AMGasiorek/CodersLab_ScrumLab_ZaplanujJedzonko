@@ -1,4 +1,14 @@
-.container--flex{
-  display: flex;
+.container{
   width: 100%;
+}
+
+.container--flex{
+  @extend .container;
+  display: flex;
+}
+
+
+@mixin buttonContent(){
+  background-color: $buttonsColor;
+  color:$fontWhite;
 }

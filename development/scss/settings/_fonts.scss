@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 
-$logoFont: "Charmonman", sans-serif;
+
+@mixin logoFont(){
+  font-family: "Charmonman", sans-serif;
+  font-size: 21px;
+}
+
+$titleSize:18px;
 
 $textFont: "Open Sans", sans-serif;
 
