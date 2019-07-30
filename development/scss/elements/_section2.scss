@@ -1,5 +1,5 @@
 .section2{
-  height: 200px;
+  height: 150px;
   color: white;
   padding-top: 50px;
 }
@@ -13,9 +13,7 @@ section.medium_background{
           text-align: center;
           padding-bottom: 50px;
           button.button{
-            background-color: $buttonsColor;
-            border: none;
-            color: white;
+            @include buttonContent();
             padding: 15px 32px;
             text-align: center;
             font-weight: bold;
