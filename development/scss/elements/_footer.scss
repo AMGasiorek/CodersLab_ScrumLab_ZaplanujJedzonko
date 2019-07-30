@@ -1,8 +1,5 @@
 @import "../settings/colors";
-
-/*.container--footer {
-  background-color: $headerColor;
-}*/
+@import "../elements/contentGrid";
 
 .footer_column {
     color:$fontWhite;
@@ -16,19 +13,7 @@
       padding-bottom:10px;
       font-size:18px;
     }
-    /*.column1 {
-      width: 32%;
-      //padding-left:70px;
-    }
-    .column2 {
-      width: 32%;
-      //h3 {
-      //  //padding-left: 20px;
-      //}
-    }
-    .column3 {
-      width: 32%;
-      padding-right:40px*/;
+
       .fab {
         font-size:25px;
         padding-top:20px;
@@ -41,9 +26,6 @@
         @include buttonContent();
         font-weight:900;
       }
-}
-
-  }
 }
 
 footer {
