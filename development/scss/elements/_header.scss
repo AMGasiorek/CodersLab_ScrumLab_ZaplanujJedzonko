@@ -1,14 +1,14 @@
  header{
+    padding: 20px;
     background-color: #292F32;
-    clear: both;
-    display: block;
-    content: "";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 10px 0;
     height: 150px;
     div.logo{
       font-size: 20px;
-      float: left;
+      //float: left;
       h1{
         font-family: $logoFont;
         #first{
@@ -16,30 +16,28 @@
           color: white;
         }
         #second{
-          color:#E58A20;
+          color: $buttonsColor;
           font-weight: 700;
         }
       }
     }
+   nav.menu {
+     width: 1000px;
+     padding: 40px;
+     font-family: $textFont;
+     ul {
+       list-style-type: none;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       color: white;
+       font-weight: bold;
+       li{
+         &:first-child{
+           color: $buttonsColor;
+         }
+       }
+     }
+   }
   }
 
-header {
-  nav.menu {
-    float: right;
-    width: 70%;
-    font-family: $textFont;
-    ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: white;
-      font-weight: bold;
-      li{
-        &:first-child{
-          color: #E58A20;
-        }
-      }
-    }
-  }
-}
