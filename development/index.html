@@ -12,52 +12,48 @@
       <h1>ZaplanujJedzonko.pl</h1>
     </header>
     <section class="container">
-      <div class="row">
-        <div class="carousel col-10">
-          <input type="radio" id="car0" name="car" checked="checked"/>
-          <div></div>
+      <div class="row carousel">
 
-          <input type="radio" id="car1" name="car"/>
-          <div>
-            <label class="carousel__arrow" for="car0"></label>
-            <div class="carousel__item">
-              <div class="top_part">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-              </div>
-              <div class="bottom_part">
-                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
-
-          <input type="radio" id="car2" name="car"/>
-          <div>
-            <label class="carousel__arrow" for="car1"></label>
-            <div class="carousel__item">
-              <div class="top_part">
-                <h1>Ut enim ad minim veniam</h1>
-              </div>
-              <div class="bottom_part">
-                <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-            </div>
-          </div>
-
-          <input type="radio" id="car3" name="car"/>
-          <div>
-            <label class="carousel__arrow" for="car2"></label>
-            <div class="carousel__item">
-              <div class="top_part">
-                <h1>Duis aute irure dolor in reprehenderit</h1>
-              </div>
-              <div class="bottom_part">
-                <p>in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-            </div>
-          </div>
+        <div class="col-1">
+          <a class="prev" onclick="nextCarouselItem(-1)">&#10094;</a>
         </div>
+        <div class="col-8 carousel_item">
+            <div class="top_part">
+              <h1>Lorem ipsum dolor sit amet.</h1>
+            </div>
+            <div class="bottom_part">
+              <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="col-8 carousel_item">
+            <div class="top_part">
+              <h1>Ut enim ad minim veniam</h1>
+            </div>
+            <div class="bottom_part">
+              <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="col-8 carousel_item">
+            <div class="top_part">
+              <h1>Duis aute irure dolor in reprehenderit</h1>
+            </div>
+            <div class="bottom_part">
+              <p>in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+        <div class="col-1">
+          <a class="next" onclick="nextCarouselItem(1)">&#10095;</a>
+        </div>
+
+<!--        <a class="prev" onclick="nextCarouselItem(-1)">&#10094;</a>-->
+<!--        <a class="next" onclick="nextCarouselItem(1)">&#10095;</a>-->
+
       </div>
+
     </section>
+
     <section>
       <!-- CTA + button -->
     </section>

@@ -1,68 +1,65 @@
 @import "../settings/colors";
+@import "../generic/reset";
 
-input{display: none;}
+/*Ta zmienna służy do ustawiania wysokości całej sekcji karuzeli*/
+$carouselHeight: 400px;
 
-.carousel{
-  position: relative;
-  height: 400px;
-  max-height: 100vh;
-  margin: 20px auto;
-  overflow: hidden;
-  user-select: none;
+/* Kontener karuzeli */
+.carousel {
+  height: $carouselHeight;
+  background-color: $backgroundColor;
 }
 
-.carousel__item {
-  position: absolute;
-  z-index: 1;
-  top: 0;
+/* Itemy/Slajdy karuzeli */
+.carousel_item {
   display: none;
   width: 100%;
   height: 100%;
-  background-color: $backgroundColor;
-  transition: left 0.5s, transform 0.5s;
-  will-change: transform;
-  backface-visibility: hidden;
   text-align: center;
-  .top_part {
+
+  .top_part, .bottom_part {
     height: 50%;
-    h1{
-      position: relative;
-      top: 80%;
+    position:relative;
+    h1, p {
+      position: absolute;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
     }
-  }
-  .bottom_part{
-    p{
-      position: relative;
-      bottom: 80%;
+    h1 {
+      bottom: 0;
+    }
+    p {
+      top: 0;
     }
   }
 }
 
-.carousel__arrow {
-  display: none;
-  position: absolute;
-  top: 50%;
-  z-index: 3;
-  transform: translateY(-50%);
-  opacity: 0.7;
-  color: #fff;
-  background-color: #999;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 28px;
-  line-height: 39px;
-  font-weight: bold;
+/* Buttony - next i previous */
+.prev, .next {
+  height: $carouselHeight;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding: 20px;
+  color: $fontBlack;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: 0.6s ease;
 }
 
-input:checked+div~div~div~div .carousel__item {background-image: none !important;}
-input:checked+div *, input:checked+div+input+div .carousel__item, input:checked+div+input+div+input+div * {display: block;}
+.prev {
+  float: left;
 
-input:checked+div .carousel__item {left: -100%; transform: scale(0.4);}
-input:checked+div+input+div .carousel__item {left: 0; transform: scale(1);}
-input:checked+div+input+div+input+div .carousel__item {left: 100%; transform: scale(0.4);}
+}
 
-input:checked+div .carousel__arrow {left: 0;}
-input:checked+div+input+div+input+div .carousel__arrow {right: 0;}
+.next {
+  float: right;
+}
 
-input:checked+div .carousel__arrow:before {content: '❰';}
-input:checked+div+input+div+input+div .carousel__arrow:before{content: '❱';}
+/* Dodanie kolorku po najechaniu kursorem na button*/
+.prev:hover, .next:hover {
+  background-color: $buttonsColor;
+  color: $fontWhite;
+}
