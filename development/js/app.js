@@ -10,6 +10,7 @@ userButton.addEventListener('click', function(){
 
     document.querySelector('header .name span').innerText = userName;
     document.querySelector('.appsection').style.display = "none";
+    document.querySelector('.desktop').style.display = "flex";
 
 });
 
@@ -18,9 +19,11 @@ document.addEventListener('DOMContentLoaded', function (){
     if (localStorage.getItem("savedName") !== null) {
         document.querySelector('header .name span').innerText = localStorage.getItem("savedName");
         document.querySelector('.appsection').style.display = "none";
+        document.querySelector('.desktop').style.display = "flex";
     } else {
         document.querySelector('header .name span').innerText="Imię";
         document.querySelector('.appsection').style.display = "flex";
+        document.querySelector('.desktop').style.display = "none";
     }
 
 
