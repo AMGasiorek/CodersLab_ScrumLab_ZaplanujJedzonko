@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function (){
         document.querySelector('header .name span').innerText = localStorage.getItem("savedName");
         document.querySelector('.appsection').style.display = "none";
     } else {
-        document.querySelector('.appsection').style.display = "block";
+        document.querySelector('header .name span').innerText="Imię";
+        document.querySelector('.appsection').style.display = "flex";
     }
 
 
