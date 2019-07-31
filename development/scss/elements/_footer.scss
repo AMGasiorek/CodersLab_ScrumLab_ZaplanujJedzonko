@@ -2,30 +2,30 @@
 @import "../elements/contentGrid";
 
 .footer_column {
-    color:$fontWhite;
-    flex-direction: row;
-    h3 {
-      font-size: $titleSize;
-    }
-    li {
-    }
-    p {
-      padding-bottom:10px;
-      font-size:18px;
-    }
-
-      .fab {
-        font-size:25px;
-        padding-top:20px;
-        padding-right:25px;
-      }
-      input[type=text] {
-        width:120px;
-      }
-      input[type=submit] {
-        @include buttonContent();
-        font-weight:900;
-      }
+  color:$fontWhite;
+  text-align: left;
+  p {
+    padding-bottom:10px;
+  }
+  h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  ul {
+    padding-inline-start: 20px;
+  }
+  .fab {
+    font-size:25px;
+    padding-top:20px;
+    padding-right:25px;
+  }
+  input[type=text] {
+    width:120px;
+  }
+  input[type=submit] {
+    @include buttonContent();
+    font-weight:900;
+  }
 }
 
 footer {
