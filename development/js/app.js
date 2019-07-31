@@ -6,7 +6,7 @@ var userButton = document.querySelector('#userButton');
 userButton.addEventListener('click', function(){
     var userName = document.querySelector('#userNameInput').value;
     localStorage.setItem('savedName', userName);
-    console.log("Twoje imię to: ", localStorage.savedName);
+    // console.log("Twoje imię to: ", localStorage.savedName);
 
     document.querySelector('header .name span').innerText = userName;
     document.querySelector('.appsection').style.display = "none";
