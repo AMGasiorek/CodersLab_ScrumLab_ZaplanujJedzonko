@@ -63,8 +63,63 @@
       }
     }
   }
+  .bottom{
+    width: 100%;
+    height: 750px;
+    border: 1px solid black;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    .userPlan{
+      color: $buttonsColor;
+      font-weight: bold;
+      padding-bottom: 40px;
+      font-size: $biggertitleSize;
+
+    }
+  }
 }
 
+.borderTable {
+  border-collapse: collapse;
+  th {
+    color: $navigationColor;
+    font-size: $biggesttitleSize;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $navigationColor;
+    border-top: 1px solid $navigationColor;
+    padding-top:20px;
+  }
+
+  td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: $titleSize;
+  }
+  tr{
+    border-bottom: 1px solid $navigationColor;
+    border-top: 1px solid $navigationColor;
+    color: $tableColor;
+  }
+}
+
+.bottom {
+  div.changePlan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 120px;
+    div.colorButton{
+      color: $buttonsColor;
+    }
+    i {
+      color: $buttonsColor;
+    }
+  }
+}
 .widgetIcon{
   font-size: 25px;
   padding-right: 10px;
