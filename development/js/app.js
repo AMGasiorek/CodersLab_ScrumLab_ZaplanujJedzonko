@@ -28,3 +28,19 @@ document.addEventListener('DOMContentLoaded', function (){
 
 
 });
+
+
+ var crossList = document.querySelectorAll(".crossIcon");
+
+
+ for(var i=0; i<crossList.length; i++){
+     var cross = crossList[i];
+     cross.addEventListener("click", function(){
+         var parent = this.parentElement.parentElement;
+             parent.style.display = "none";
+     });
+ }
+
+
+
+
