@@ -24,6 +24,7 @@
   .plan__data{
     padding: 10px 20px 10px 10px;
     .main__info__plan{
+      padding-bottom: 20px;
       div{
         justify-content: flex-start;
         color: $tableColor;
@@ -65,7 +66,7 @@
             width: 16.666%;
           }
           th.meal{
-            height: 80px;
+            height: 70px;
           }
 
           th.empty{
