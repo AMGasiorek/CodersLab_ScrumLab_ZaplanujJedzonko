@@ -1,5 +1,8 @@
 console.clear();
 
+var oo={"Grzegorz":{"log":1,"war":"dhfhj"},"wac":{"hfgurf":234,"huy":1234}};
+console.log(oo);
+
 var userButton = document.querySelector('#userButton');
 
 

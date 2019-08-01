@@ -29,12 +29,12 @@
     </nav>
     <div class="inner__padding">
         <section class="container--flex add__plan">
-            <div class="title">
+            <div class="container--flex title">
                 <span>NOWY PLAN</span>
-                <div class="add__plan__button"></div>
+                <a href="#"><div class="add__plan__button">Zapisz i zamknij</div></a>
             </div>
-            <div class="plan__data">
-                <div class="main__info__plan">
+            <div class="plan__data container">
+                <div class="main__info__plan container">
                     <div class="container--flex">
                         <span>Nazwa planu</span>
                         <input type="text" placeholder="Nazwa planu">
@@ -45,18 +45,215 @@
                     </div>
                     <div class="container--flex">
                         <span>Numer tygodnia</span>
-                        <input type="text" placeholder="0">
+                        <input type="text" id="plan__number" placeholder="0">
                     </div>
                 </div>
-                <div class="table__plan">
-                    <table>
+                <div class="table__plan container">
+                    <table class="container">
                         <tr>
-                            <td>bla1</td>
-                            <td>bla1</td>
+                            <th class="empty meal"></th>
+                            <th class="meal">ŚNIADANIE</th>
+                            <th class="meal">DRUGIE</br>ŚNIADANIE</th>
+                            <th class="meal">ZUPA</th>
+                            <th class="meal">DRUGIE</br>DANIE</th>
+                            <th class="meal">KOLACJA</th>
                         </tr>
                         <tr>
-                            <td>bla</td>
-                            <td>bla</td>
+                            <th scope="row">PONIEDZIAŁEK</th>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                    <option value="zsk">masewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">WTOREK</th>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ŚRODA</th>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">CZWARTEK</th>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">PIĄTEK</th>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SOBOTA</th>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">NIEDZIELA</th>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="ziemniak">marchewka</option>
+                                </select>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -64,6 +261,6 @@
         </section>
     </div>
 </div>
-<script src="./js/app.js"></script>
+<!--<script src="./js/app.js"></script>-->
 </body>
 </html>
