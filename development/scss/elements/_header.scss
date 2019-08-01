@@ -32,11 +32,24 @@
        li{
          &:first-child{
            color: $buttonsColor;
+           }
+         a:link{
+           text-decoration: none;
+           color: white;
+         }
+          a{
+            &:visited{
+              color: white;
+              &:first-child{
+                color: $buttonsColor;
+              }
+            }
          }
        }
      }
    }
   }
+
 
 header{
   div.name{
@@ -48,6 +61,24 @@ header{
       margin: 10px;
       color: $buttonsColor;
       font-size: 30px;
+    }
+  }
+}
+
+section.medium_background{
+  div.container--grid.landingPage{
+    div.row{
+      div.col-3.section2{
+        div.buttonBox{
+          a{
+            color: white;
+            text-decoration: none;
+            &:visited{
+              color:white
+            }
+          }
+        }
+      }
     }
   }
 }
