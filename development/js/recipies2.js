@@ -89,7 +89,12 @@ addIngredientsButton.addEventListener("click", function () {
 
 
 addRecipe.addEventListener("click", function(){
-    var allRecipies = JSON.parse(localStorage.getItem("recipiesZJ"));
+    if (localStorage.getItem("recipiesZJ")==undefined){
+        var allRecipies = {};
+    }else{
+        var allRecipies = JSON.parse(localStorage.getItem("recipiesZJ"));
+    }
+
     var instructionsTab = [];
     var ingredientsTab = [];
     var instructionsListElements = instructionsList.getElementsByTagName("li");
