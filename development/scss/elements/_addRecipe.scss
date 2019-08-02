@@ -76,30 +76,38 @@
           color: $succesColor;
           float: right;
         }
-        ol {
+        ol, ul {
           width: 95%;
           margin-top: 20px;
-          padding-left: 15px;
+          padding-left: 25px;
           min-height: 200px;
           max-height: 200px;
-          display: block;
           border: 1px solid $tableColor;
           overflow: auto;
-        }
-        ul {
-          width: 95%;
-          margin-top: 20px;
-          padding-left: 15px;
-          min-height: 200px;
-          max-height: 200px;
-          display: block;
-          border: 1px solid $tableColor;
-          overflow: auto;
+          li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+         /* &:before, &:after {
+            content: "";
+            clear: both;
+            display: block;
+            }*/
+          .delete-button, .edit-button{
+            display: block;
+            background-color: $backgroundColor;
+            color: red;
+            font-size: 14px;
+            margin-right: 5px;
+          }
+          .edit-button{
+            color: $buttonsColor;
+          }
         }
         &:after {
           content: "";
           clear: both;
-          display: table;
+          display: block;
         }
       }
     }
