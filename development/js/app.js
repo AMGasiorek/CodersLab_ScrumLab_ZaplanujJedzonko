@@ -1,8 +1,5 @@
 console.clear();
 
-var oo={"Grzegorz":{"log":1,"war":"dhfhj"},"wac":{"hfgurf":234,"huy":1234}};
-console.log(oo);
-
 var userButton = document.querySelector('#userButton');
 
 
@@ -32,9 +29,18 @@ document.addEventListener('DOMContentLoaded', function (){
 
 });
 
-function recipies (name, description, instruction, ingredients) {
-    this.name = name;
-    this.description = description;
-    this.instructions = instruction;
-    this.ingredients = ingredients;
-}
+
+ var crossList = document.querySelectorAll(".crossIcon");
+
+
+ for(var i=0; i<crossList.length; i++){
+     var cross = crossList[i];
+     cross.addEventListener("click", function(){
+         var parent = this.parentElement.parentElement;
+             parent.style.display = "none";
+     });
+ }
+
+
+
+
