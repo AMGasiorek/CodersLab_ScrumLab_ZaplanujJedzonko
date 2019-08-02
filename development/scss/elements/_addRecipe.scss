@@ -80,6 +80,7 @@
           width: 95%;
           margin-top: 20px;
           padding-left: 25px;
+          padding-right: 25px;
           min-height: 200px;
           max-height: 200px;
           border: 1px solid $tableColor;
@@ -87,6 +88,10 @@
           li {
             padding-top: 5px;
             padding-bottom: 5px;
+            width: 100%;
+            p{
+              width: 90%;
+            }
           }
          /* &:before, &:after {
             content: "";
