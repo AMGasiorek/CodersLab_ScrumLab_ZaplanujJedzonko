@@ -45,19 +45,19 @@
                 <div class="main__info__plan container">
                     <div class="container--flex">
                         <span>Nazwa planu</span>
-                        <input type="text" placeholder="Nazwa planu">
+                        <input class="newPlanName" type="text" placeholder="Nazwa planu">
                     </div>
                     <div class="container--flex">
                         <span>Opis planu</span>
-                        <textarea placeholder="Opis planu"></textarea>
+                        <textarea class="newPlanDescription" placeholder="Opis planu"></textarea>
                     </div>
                     <div class="container--flex">
                         <span>Numer tygodnia</span>
-                        <input type="text" id="plan__number" placeholder="0">
+                        <input class="newPlanWeekNr" type="text" id="plan__number" placeholder="0">
                     </div>
                 </div>
                 <div class="table__plan container">
-                    <table class="container">
+                    <table class="newPlanTable container">
                         <tr>
                             <th class="empty meal"></th>
                             <th class="meal">ŚNIADANIE</th>
@@ -67,199 +67,163 @@
                             <th class="meal">KOLACJA</th>
                         </tr>
                         <tr>
-                            <th scope="row">PONIEDZIAŁEK</th>
+                            <th scope="row" data-day="pon">PONIEDZIAŁEK</th>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
-                                    <option value="zsk">masewka</option>
+                                <select data-meal="snd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drsnd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="zupa">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drdn">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="kol">
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">WTOREK</th>
+                            <th scope="row" data-day="wt">WTOREK</th>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="snd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drsnd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="zupa">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drdn">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="kol">
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">ŚRODA</th>
+                            <th scope="row" data-day="sr">ŚRODA</th>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="snd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drsnd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="zupa">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drdn">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="kol">
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">CZWARTEK</th>
+                            <th scope="row" data-day="czw">CZWARTEK</th>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="snd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drsnd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="zupa">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drdn">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="kol">
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">PIĄTEK</th>
+                            <th scope="row" data-day="pt">PIĄTEK</th>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="snd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drsnd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="zupa">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drdn">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="kol">
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">SOBOTA</th>
+                            <th scope="row" data-day="sob">SOBOTA</th>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="snd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drsnd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="zupa">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drdn">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="kol">
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">NIEDZIELA</th>
+                            <th scope="row" data-day="nd">NIEDZIELA</th>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="snd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drsnd">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="zupa">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="drdn">
                                 </select>
                             </td>
                             <td>
-                                <select>
-                                    <option value="ziemniak">marchewka</option>
+                                <select data-meal="kol">
                                 </select>
                             </td>
                         </tr>
