@@ -89,8 +89,11 @@
             padding-top: 5px;
             padding-bottom: 5px;
             width: 100%;
+            height: auto;
+            display: inline-block;
             p{
-              width: 90%;
+              display: list-item;
+              float:left
             }
           }
          /* &:before, &:after {
@@ -99,11 +102,14 @@
             display: block;
             }*/
           .delete-button, .edit-button{
-            display: block;
+            display: inline-block;
             background-color: $backgroundColor;
             color: red;
             font-size: 14px;
+            margin-top: 3px;
             margin-right: 5px;
+            margin-left: 5px;
+            float: left;
           }
           .edit-button{
             color: $buttonsColor;
