@@ -39,18 +39,18 @@
               <section class="container--flex desktop">
                   <div class="container--flex top">
                       <div class="addWidgetButtons">
-                          <div class="addWidgetButton recepie">
+                          <a href="recipes.html"><div class="addWidgetButton recipe">
                               <i class="far fa-plus-square"></i>
                               dodaj przepis
-                          </div>
-                          <div class="addWidgetButton plan">
+                          </div></a>
+                          <a href="schedules.html"><div class="addWidgetButton plan">
                               <i class="far fa-plus-square"></i>
                               dodaj plan
-                          </div>
+                          </div></a>
                       </div>
                       <div class="widgetBox">
                           <div class="placeBox widgetBorder blueWidget">
-                              <div><i class="widgetIcon fas fa-info-circle"></i>Masz już 99 przepisów, nieźle!</div>
+                              <div><i class="widgetIcon fas fa-info-circle"></i>Masz już <span></span> przepisów, nieźle!</div>
                               <div><i class="blueWidget crossIcon fas fa-times"></i></div>
                           </div>
                           <div class="placeBox widgetBorder yellowWidget">
@@ -64,8 +64,8 @@
                       </div>
                   </div>
                   <div class="container--flex bottom">
-                      <div class="userPlan">Twój plan na (nr_tygodnia) tydzień:</div>
-                      <table class="container borderTable">
+                      <div class="userPlan">Twój plan na <span></span> tydzień:</div>
+                      <table class="container borderTable planView">
                           <tr>
                               <th>Poniedziałek</th>
                               <th>Wtorek</th>
@@ -75,51 +75,51 @@
                               <th>Sobota</th>
                               <th>Niedziala</th>
                           </tr>
-                          <tr>
-                              <td>Śniadanie</td>
-                              <td>Śniadanie</td>
-                              <td>Śniadanie</td>
-                              <td>Śniadanie</td>
-                              <td>Śniadanie</td>
-                              <td>Śniadanie</td>
-                              <td>Śniadanie</td>
+                          <tr data-meal="snd">
+                              <td data-day="pon"></td>
+                              <td data-day="wt"></td>
+                              <td data-day="sr"></td>
+                              <td data-day="czw"></td>
+                              <td data-day="pt"></td>
+                              <td data-day="sob"></td>
+                              <td data-day="nd"></td>
 
                           </tr>
-                          <tr>
-                              <td>Drugie śniadanie</td>
-                              <td>Drugie śniadanie</td>
-                              <td>Drugie śniadanie</td>
-                              <td>Drugie śniadanie</td>
-                              <td>Drugie śniadanie</td>
-                              <td>Drugie śniadanie</td>
-                              <td>Drugie śniadanie</td>
+                          <tr data-meal="drsnd">
+                              <td data-day="pon"></td>
+                              <td data-day="wt"></td>
+                              <td data-day="sr"></td>
+                              <td data-day="czw"></td>
+                              <td data-day="pt"></td>
+                              <td data-day="sob"></td>
+                              <td data-day="nd"></td>
                           </tr>
-                          <tr>
-                              <td>Zupa</td>
-                              <td>Zupa</td>
-                              <td>Zupa</td>
-                              <td>Zupa</td>
-                              <td>Zupa</td>
-                              <td>Zupa</td>
-                              <td>Zupa</td>
+                          <tr data-meal="zupa">
+                              <td data-day="pon"></td>
+                              <td data-day="wt"></td>
+                              <td data-day="sr"></td>
+                              <td data-day="czw"></td>
+                              <td data-day="pt"></td>
+                              <td data-day="sob"></td>
+                              <td data-day="nd"></td>
                           </tr>
-                          <tr>
-                              <td>Drugie danie</td>
-                              <td>Drugie danie</td>
-                              <td>Drugie danie</td>
-                              <td>Drugie danie</td>
-                              <td>Drugie danie</td>
-                              <td>Drugie danie</td>
-                              <td>Drugie danie</td>
+                          <tr data-meal="drdn">
+                              <td data-day="pon"></td>
+                              <td data-day="wt"></td>
+                              <td data-day="sr"></td>
+                              <td data-day="czw"></td>
+                              <td data-day="pt"></td>
+                              <td data-day="sob"></td>
+                              <td data-day="nd"></td>
                           </tr>
-                          <tr>
-                              <td>Kolacja</td>
-                              <td>Kolacja</td>
-                              <td>Kolacja</td>
-                              <td>Kolacja</td>
-                              <td>Kolacja</td>
-                              <td>Kolacja</td>
-                              <td>Kolacja</td>
+                          <tr data-meal="kol">
+                              <td data-day="pon"></td>
+                              <td data-day="wt"></td>
+                              <td data-day="sr"></td>
+                              <td data-day="czw"></td>
+                              <td data-day="pt"></td>
+                              <td data-day="sob"></td>
+                              <td data-day="nd"></td>
                           </tr>
                       </table>
                       <div class="changePlan container">
