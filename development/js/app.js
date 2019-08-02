@@ -31,3 +31,10 @@ document.addEventListener('DOMContentLoaded', function (){
 
 
 });
+
+function recipies (name, description, instruction, ingredients) {
+    this.name = name;
+    this.description = description;
+    this.instructions = instruction;
+    this.ingredients = ingredients;
+}

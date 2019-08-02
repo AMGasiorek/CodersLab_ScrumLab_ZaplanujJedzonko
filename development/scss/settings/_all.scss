@@ -1,3 +1,5 @@
+@import "../settings/colors";
+
 .container{
   width: 100%;
 }
@@ -13,5 +15,8 @@
   color:$fontWhite;
 }
 
+@mixin appActivePanelFrame {
+  background-color: $backgroundColor;
+  border: 1px dashed $tableColor;
+}
 $sectionborder: 1px dashed $tableColor;
-

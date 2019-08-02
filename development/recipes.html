@@ -81,8 +81,55 @@
 
             </table>
         </section>
+        <section class="container--flex addRecipe">
+            <div class = "header_part">
+                <div class = "addRecipe_title">
+                    <h3>EDYCJA PRZEPISU</h3>
+                    <button id="add-recipe" class="button">Zapisz i zamknij</button>
+                </div>
+                <div class = "addRecipe_description">
+                    <form>
+                        <div>
+                            <label for="recipe-name">Nazwa przepisu</label>
+                            <input name="recipe-name" id="recipe-name" type="text" placeholder="Tutaj wpisz nazwę przepisu">
+                        </div>
+                        <div>
+                            <label for="recipe-description">Opis przepisu</label>
+                            <textarea name="recipe-description" id="recipe-description" placeholder="Tutaj wpisz opis przepisu" rows="5"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class = "editing_part">
+                <div class = "left-column">
+                    <div>
+                        <h3>INSTRUKCJE</h3>
+                    </div>
+                    <div>
+                        <textarea id="new-instruction" rows="5"></textarea>
+                        <button id="add-instruction" class="fas fa-plus-square"></button>
+                    </div>
+                    <div>
+                        <ol id="instructions"></ol>
+                    </div>
+                </div>
+                <div class = "right-column">
+                    <div>
+                        <h3>SKŁADNIKI</h3>
+                    </div>
+                    <div>
+                        <textarea id="new-ingredient" rows="5"></textarea>
+                        <button id="add-ingredient" class="fas fa-plus-square"></button>
+                    </div>
+                    <div>
+                        <ul id="ingredients"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
-<script src="js/recipies.js"></script>
+<script src="./js/recipies.js"></script>
+<script src="./js/recipies2.js"></script>
 </body>
 </html>
