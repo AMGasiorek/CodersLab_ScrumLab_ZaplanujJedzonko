@@ -19,55 +19,116 @@
         <i class="user fas fa-user-circle"></i>
       </div>
     </header>
-    <div class="container--flex content">
-      <nav class="navigation__panel">
-        <ul>
-          <a href="app.html"><li>Pulpit</li></a>
-          <a href="recipes.html"><li>Przepisy</li></a>
-          <a href="schedules.html"><li>Plany</li></a>
-        </ul>
-      </nav>
-      <div class="inner__padding">
+        <div class="container--flex content">
+          <nav class="navigation__panel">
+            <ul>
+              <a href="app.html"><li>Pulpit</li></a>
+              <a href="recipes.html"><li>Przepisy</li></a>
+              <a href="schedules.html"><li>Plany</li></a>
+            </ul>
+          </nav>
+          <div class="inner__padding">
 
-        <section class="container--flex appsection">
-          <h2>Witaj,</h2>
-          <span>Wygląda na to, że jesteś tutaj pierwszy raz!</span>
-          <input id="userNameInput" type="text" name="text" placeholder="tutaj wpisz jak masz na imię"><br>
-          <input id="userButton" type="submit" value="Gotowe!">
-          <span>Podaj nam swoje imię a my zorganizujemy dla Ciebie naszą aplikację :)</span>
-        </section>
-          <section class="container--flex desktop">
-              <div class="container--flex top">
-                  <div class="addWidgetButtons">
-                      <div class="addWidgetButton recepie">
-                          <i class="far fa-plus-square"></i>
-                          dodaj przepis
+            <section class="container--flex appsection">
+              <h2>Witaj,</h2>
+              <span>Wygląda na to, że jesteś tutaj pierwszy raz!</span>
+              <input id="userNameInput" type="text" name="text" placeholder="tutaj wpisz jak masz na imię"><br>
+              <input id="userButton" type="submit" value="Gotowe!">
+              <span>Podaj nam swoje imię a my zorganizujemy dla Ciebie naszą aplikację :)</span>
+            </section>
+              <section class="container--flex desktop">
+                  <div class="container--flex top">
+                      <div class="addWidgetButtons">
+                          <div class="addWidgetButton recepie">
+                              <i class="far fa-plus-square"></i>
+                              dodaj przepis
+                          </div>
+                          <div class="addWidgetButton plan">
+                              <i class="far fa-plus-square"></i>
+                              dodaj plan
+                          </div>
                       </div>
-                      <div class="addWidgetButton plan">
-                          <i class="far fa-plus-square"></i>
-                          dodaj plan
+                      <div class="widgetBox">
+                          <div class="placeBox widgetBorder blueWidget">
+                              <div><i class="widgetIcon fas fa-info-circle"></i>Masz już 99 przepisów, nieźle!</div>
+                              <div><i class="blueWidget crossIcon fas fa-times"></i></div>
+                          </div>
+                          <div class="placeBox widgetBorder yellowWidget">
+                          <div><i class="widgetIcon fas fa-exclamation-circle"></i>Pamiętaj, aby dodać plan</div>
+                             <div><i class="yellowWidget crossIcon fas fa-times"></i></div>
+                          </div>
+                          <div class="placeBox widgetBorder greenWidget">
+                              <div><i class="widgetIcon fas fa-check-circle"></i>Świetnie,że jesteś! Udanego planowania i smacznego! :)</div>
+                              <div><i class="greenWidget crossIcon fas fa-times"></i></div>
+                          </div>
                       </div>
                   </div>
-                  <div class="widgetBox">
-                      <div class="placeBox widgetBorder blueWidget">
-                          <div><i class="widgetIcon fas fa-info-circle"></i>Masz już 99 przepisów, nieźle!</div>
-                          <div><i class="blueWidget crossIcon fas fa-times"></i></div>
-                      </div>
-                      <div class="placeBox widgetBorder yellowWidget">
-                      <div><i class="widgetIcon fas fa-exclamation-circle"></i>Pamiętaj, aby dodać plan</div>
-                         <div><i class="yellowWidget crossIcon fas fa-times"></i></div>
-                      </div>
-                      <div class="placeBox widgetBorder greenWidget">
-                          <div><i class="widgetIcon fas fa-check-circle"></i>Świetnie,że jesteś! Udanego planowania i smacznego! :)</div>
-                          <div><i class="greenWidget crossIcon fas fa-times"></i></div>
+                  <div class="container--flex bottom">
+                      <div class="userPlan">Twój plan na (nr_tygodnia) tydzień:</div>
+                      <table class="container borderTable">
+                          <tr>
+                              <th>Poniedziałek</th>
+                              <th>Wtorek</th>
+                              <th>Środa</th>
+                              <th>Czwartek</th>
+                              <th>Piątek</th>
+                              <th>Sobota</th>
+                              <th>Niedziala</th>
+                          </tr>
+                          <tr>
+                              <td>Śniadanie</td>
+                              <td>Śniadanie</td>
+                              <td>Śniadanie</td>
+                              <td>Śniadanie</td>
+                              <td>Śniadanie</td>
+                              <td>Śniadanie</td>
+                              <td>Śniadanie</td>
+
+                          </tr>
+                          <tr>
+                              <td>Drugie śniadanie</td>
+                              <td>Drugie śniadanie</td>
+                              <td>Drugie śniadanie</td>
+                              <td>Drugie śniadanie</td>
+                              <td>Drugie śniadanie</td>
+                              <td>Drugie śniadanie</td>
+                              <td>Drugie śniadanie</td>
+                          </tr>
+                          <tr>
+                              <td>Zupa</td>
+                              <td>Zupa</td>
+                              <td>Zupa</td>
+                              <td>Zupa</td>
+                              <td>Zupa</td>
+                              <td>Zupa</td>
+                              <td>Zupa</td>
+                          </tr>
+                          <tr>
+                              <td>Drugie danie</td>
+                              <td>Drugie danie</td>
+                              <td>Drugie danie</td>
+                              <td>Drugie danie</td>
+                              <td>Drugie danie</td>
+                              <td>Drugie danie</td>
+                              <td>Drugie danie</td>
+                          </tr>
+                          <tr>
+                              <td>Kolacja</td>
+                              <td>Kolacja</td>
+                              <td>Kolacja</td>
+                              <td>Kolacja</td>
+                              <td>Kolacja</td>
+                              <td>Kolacja</td>
+                              <td>Kolacja</td>
+                          </tr>
+                      </table>
+                      <div class="changePlan container">
+                          <div class="colorButton"><i class="fas fa-angle-double-left"></i>Poprzedni</div>
+                          <div class="colorButton">Następny<i class="fas fa-angle-double-right"></i></div>
                       </div>
                   </div>
-              </div>
-              <div class="container--flex bottom">
-                  Tu będzie reszta
-              </div>
-          </section>
-      </div>
+              </section>
+          </div>
     </div>
     <script src="./js/app.js"></script>
   </body>
